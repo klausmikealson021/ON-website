@@ -518,3 +518,13 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .hero-visual-caption {
   display: none !important;
 }
+
+
+/* نمایش کامل ویدیوهای کارت خدمات */
+.service-card-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  object-position: center;
+}
