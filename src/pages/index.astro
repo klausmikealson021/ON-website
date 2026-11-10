@@ -100,21 +100,38 @@ const articles = [
         </div>
 
         <div class="hero-visual-wrap">
-          <div class="hero-visual media-placeholder" role="img" aria-label="جایگاه ویدئوی اختصاصی معرفی ORIGINAL NET">
-            <div class="hero-visual-grid" aria-hidden="true"></div>
-            <div class="hero-visual-orbit orbit-one" aria-hidden="true"></div>
-            <div class="hero-visual-orbit orbit-two" aria-hidden="true"></div>
-            <div class="hero-core" aria-hidden="true"><span>ON</span></div>
-            <span class="visual-label visual-label-top">BRAND MOTION / 01</span>
-            <span class="visual-label visual-label-bottom">جایگاه ویدئوی اختصاصی هیرو</span>
-            <span class="visual-corner visual-corner-one" aria-hidden="true"></span>
-            <span class="visual-corner visual-corner-two" aria-hidden="true"></span>
-          </div>
-          <div class="hero-visual-caption">
-            <span>01 — تجربه دیجیتال</span>
-            <span>ORIGINAL NET</span>
-          </div>
-        </div>
+  <div class="hero-visual hero-video-frame">
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-hidden="true"
+    >
+      <source src="/media/hero.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero-video-overlay" aria-hidden="true"></div>
+
+    <span class="visual-label visual-label-top">
+      BRAND MOTION / 01
+    </span>
+
+    <span class="visual-label visual-label-bottom">
+      ORIGINAL NET / CINEMATIC EXPERIENCE
+    </span>
+
+    <span class="visual-corner visual-corner-one" aria-hidden="true"></span>
+    <span class="visual-corner visual-corner-two" aria-hidden="true"></span>
+  </div>
+
+  <div class="hero-visual-caption">
+    <span>01 — تجربه دیجیتال</span>
+    <span>ORIGINAL NET</span>
+  </div>
+</div>
       </div>
       <div class="hero-bottom-line container" aria-hidden="true"><span></span><span>SCROLL TO EXPLORE</span><span></span></div>
     </section>
