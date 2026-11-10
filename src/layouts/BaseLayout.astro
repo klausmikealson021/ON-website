@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'ORIGINAL NET | دسترسی آسان، با اطمینان',
+  description = 'مسیر روشن و شفاف برای آشنایی با خدمات منتخب تلگرام در ORIGINAL NET.'
+} = Astro.props;
+---
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090b" />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&family=UnifrakturCook:wght@700&family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+    <script type="module" src="../scripts/main.js"></script>
+  </body>
+</html>
