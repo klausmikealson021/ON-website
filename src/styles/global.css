@@ -481,3 +481,40 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Hero video corrections */
+.hero-visual {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.hero-visual::before {
+  display: none !important;
+}
+
+.hero-video-frame {
+  aspect-ratio: 1344 / 768;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  overflow: hidden;
+}
+
+.hero-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.visual-label,
+.visual-corner {
+  display: none !important;
+}
+
+.hero-visual-caption {
+  display: none !important;
+}
