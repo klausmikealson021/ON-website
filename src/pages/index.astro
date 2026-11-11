@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ParticleSphere from '../components/ParticleSphere.astro';
 
 const channelUrl = 'https://t.me/+__qCxFVxReFkMTI0';
 const supportUrl = 'https://t.me/mikealson_og';
@@ -235,15 +236,16 @@ const articles = [
           <p>این فضا برای تجربه‌های تعاملی آینده ORIGINAL NET در نظر گرفته شده است؛ جایی برای نمایش داده، حرکت و فناوری‌های تازه.</p>
           <span class="coming-soon"><i></i> فضای تعاملی در حال توسعه</span>
         </div>
-        <div class="particle-stage" role="img" aria-label="نمایش آزمایشی گوی ذرات سه‌بعدی؛ نسخه تعاملی در مرحله بعد توسعه می‌یابد">
-          <div class="particle-halo halo-a"></div>
-          <div class="particle-halo halo-b"></div>
-          <div class="particle-sphere">
-            <span class="particle p01"></span><span class="particle p02"></span><span class="particle p03"></span><span class="particle p04"></span><span class="particle p05"></span><span class="particle p06"></span><span class="particle p07"></span><span class="particle p08"></span><span class="particle p09"></span><span class="particle p10"></span><span class="particle p11"></span><span class="particle p12"></span><span class="particle p13"></span><span class="particle p14"></span><span class="particle p15"></span><span class="particle p16"></span><span class="particle p17"></span><span class="particle p18"></span><span class="particle p19"></span><span class="particle p20"></span><span class="particle p21"></span><span class="particle p22"></span><span class="particle p23"></span><span class="particle p24"></span>
-          </div>
-          <span class="particle-caption particle-caption-top">PARTICLE FIELD / 001</span>
-          <span class="particle-caption particle-caption-bottom">INTERACTIVE EXPERIENCE</span>
-        </div>
+        
+<div class="particle-stage">
+  <ParticleSphere />
+  <span class="particle-caption particle-caption-top">
+    PARTICLE FIELD / 001
+  </span>
+  <span class="particle-caption particle-caption-bottom">
+    INTERACTIVE EXPERIENCE
+  </span>
+</div>
       </div>
     </section>
 

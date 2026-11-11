@@ -528,3 +528,9 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
   object-fit: contain !important;
   object-position: center;
 }
+/* Remove legacy decorative cross lines */
+.particle-stage::before,
+.particle-stage::after {
+  content: none !important;
+  display: none !important;
+}
